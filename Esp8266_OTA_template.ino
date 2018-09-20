@@ -170,7 +170,7 @@ void sendMessageToMqtt() {
 	long now = millis();
 	if (now - lastTempMsg > sensorRequestPeriod) {
 		lastTempMsg = now;
-		float sensor_value = 25;
+		float sensor_value = 15;
 		// Request sensot here
 		//float temp = sensors.getTempCByIndex(0);
 		Serial.print("Publish message temp: ");
